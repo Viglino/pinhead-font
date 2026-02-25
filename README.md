@@ -35,15 +35,17 @@ Then use an inline element with a class prefixed with `pin-` to add a new icon.
 <img src="https://github.com/Viglino/pinhead-font/blob/main/svg/geometric_shapes/uEB23-map_pin_with_dot.svg" height="30" />
 <img src="https://github.com/Viglino/pinhead-font/blob/main/svg/misc/uEC73-shopping_basket.svg" height="30" />
 ```html
-<!-- prefix: fg - icon name: poi -->
-<i class="fg-poi"></i>
+<!-- prefix: pin - icon name: map_pin_with_dot -->
+<i class="pin-fg-map_pin_with_dot"></i>
 <!-- using a <span> is more semantically correct but a little bit verbose. -->
-<span class="fg-polyline-pt"></span>
+<span class="pin-shopping_basket"></span>
 ```
 Or use it as an svg sprite (svg sprites are inlocated in the `./dist/pinhead-font.svg` file):    
 <img src="https://github.com/Viglino/pinhead-font/blob/main/svg/misc/uEC73-shopping_basket.svg" height="30" />
 ```html
-<svg class="pinhead-font fg-3x"><use xlink:href="path/to/dist/pinhead-font.svg#pin-shopping_basket" /></svg>
+<svg class="pinhead-font pin-3x">
+  <use xlink:href="path/to/dist/pinhead-font.svg#pin-shopping_basket" />
+</svg>
 ```
 
 ## <img src="https://github.com/Viglino/pinhead-font/blob/main/svg/hand_tools/uEB44-brick_trowel.svg" height="35" align="left" />Contributing
