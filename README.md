@@ -70,12 +70,12 @@ npm start
 
 ## <img src="https://github.com/Viglino/pinhead-font/blob/main/svg/misc/uEC73-shopping_basket.svg" height="35" align="left" />Licenses
 
-**Pinhead-Font is licensed under [Apache-2.0](https://github.com/Viglino/pinhead-font/blob/main/LICENSE-APACHE.md)**    
+**Pinhead-Font is licensed under [CC0](./LICENSE)**    
 Copyright (c) 2021 Jean-Marc Viglino
 
 [Pinhead-Font](https://viglino.github.io/pinhead-font/) is free, open source, and GPL friendly. 
 You can use it for commercial projects, open source projects, or really almost whatever you want.
-[Read full Pinhead-Font license](https://github.com/Viglino/pinhead-font/blob/main/LICENSE.md)
+[Read full Pinhead-Font license](./LICENSE.md)
 
 Dual-license can be used for each specific part:
 * Pinhead-Font **font** is licensed under the [SIL OFL 1.1 License](./LICENSE-OFL.md)
