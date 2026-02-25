@@ -6,7 +6,7 @@
 ![](https://img.shields.io/npm/dw/pinhead-font)
 ![](https://img.shields.io/npm/l/pinhead-font.svg)
 
-This repo use the icons from the [Pinhead project](https://github.com/waysidemapping/pinhead).
+This repo use the icons from the [**Pinhead project**](https://github.com/waysidemapping/pinhead).    
 Pinhead has 1,000+ icons and counting, including standardized versions of the most popular public domain 
 cartographic icon sets: Maki, Temaki, OSM Carto, and NPMap.
 
