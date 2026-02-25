@@ -71,7 +71,7 @@ npm start
 ## <img src="https://github.com/Viglino/pinhead-font/blob/main/svg/misc/uEC73-shopping_basket.svg" height="35" align="left" />Licenses
 
 **Pinhead-Font is licensed under [CC0](./LICENSE)**    
-Copyright (c) 2021 Jean-Marc Viglino
+Copyright (c) 2021-2026
 
 [Pinhead-Font](https://viglino.github.io/pinhead-font/) is free, open source, and GPL friendly. 
 You can use it for commercial projects, open source projects, or really almost whatever you want.
