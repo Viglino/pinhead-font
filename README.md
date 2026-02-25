@@ -77,5 +77,5 @@ You can use it for commercial projects, open source projects, or really almost w
 
 Dual-license can be used for each specific part:
 * Pinhead-Font **font** is licensed under the [SIL OFL 1.1 License](./LICENSE-OFL.md)
-* **Icons** and **SVG** files are licensed under the [CC0 License](./LICENCE)
+* **Icons** and **SVG** files are licensed under the [CC0 License](./LICENSE)
 * **Codes** and all non font or icon files are licensed under the [MIT License](./LICENSE-MIT.md)
