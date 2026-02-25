@@ -1,4 +1,4 @@
-# <img src="https://github.com/Viglino/pinhead-font/blob/main/svg/globe/uEA82-globe-poi.svg" height="40" /> Pinhead-Font
+# <img src="https://github.com/Viglino/pinhead-font/blob/main/svg/misc/uEC57-pin.svg" height="40" /> Pinhead-Font
 *Icon font set for use with GIS and spatial analysis tools*
 
 [![](https://img.shields.io/npm/v/pinhead-font.svg)](https://www.npmjs.com/package/pinhead-font)
@@ -10,9 +10,9 @@ I've collected in this repo icons and graphics I've been using in my projects.
 Pinhead-Font icons and font theme is designed mainly for GIS applications and web mapping tools. 
 They can be easily included in a project using the font or svg images.
 
-[See demo page and examples <img src="https://github.com/Viglino/pinhead-font/blob/main/svg/search/uEA5F-search-map.svg" height="25" />](https://viglino.github.io/pinhead-font/)
+[See demo page and examples <img src="https://github.com/Viglino/pinhead-font/blob/main/svg/misc/uEC57-pin.svg" height="25" />](https://viglino.github.io/pinhead-font/)
 
-## <img src="https://github.com/Viglino/pinhead-font/blob/main/svg/routing/uEA8F-timer.svg" height="35" align="left" />Getting started
+## <img src="https://github.com/Viglino/pinhead-font/blob/main/svg/misc/uEBCE-clock_face.svg" height="35" align="left" />Getting started
 
 ###  NPM package
 
@@ -31,9 +31,9 @@ To use it in a web page, just add the css in your project.
 ```html
 <link href="https://viglino.github.io/pinhead-font/css/pinhead-font.css" rel="stylesheet" />
 ```
-Then use an inline element with a class prefixed with `fg-` to add a new icon.    
-<img src="https://github.com/Viglino/pinhead-font/blob/main/svg/poi/uEA16-poi.svg" height="30" />
-<img src="https://github.com/Viglino/pinhead-font/blob/main/svg/geom/uEA02-polyline-pt.svg" height="30" />
+Then use an inline element with a class prefixed with `pin-` to add a new icon.    
+<img src="https://github.com/Viglino/pinhead-font/blob/main/svg/geometric_shapes/uEB23-map_pin_with_dot.svg" height="30" />
+<img src="https://github.com/Viglino/pinhead-font/blob/main/svg/misc/uEC73-shopping_basket.svg" height="30" />
 ```html
 <!-- prefix: fg - icon name: poi -->
 <i class="fg-poi"></i>
@@ -41,12 +41,12 @@ Then use an inline element with a class prefixed with `fg-` to add a new icon.
 <span class="fg-polyline-pt"></span>
 ```
 Or use it as an svg sprite (svg sprites are inlocated in the `./dist/pinhead-font.svg` file):    
-<img src="https://github.com/Viglino/pinhead-font/blob/main/svg/geom/uEA03-polygon-pt.svg" height="30" />
+<img src="https://github.com/Viglino/pinhead-font/blob/main/svg/misc/uEC73-shopping_basket.svg" height="30" />
 ```html
-<svg class="pinhead-font fg-3x"><use xlink:href="path/to/dist/pinhead-font.svg#fg-polyline-pt" /></svg>
+<svg class="pinhead-font fg-3x"><use xlink:href="path/to/dist/pinhead-font.svg#pin-shopping_basket" /></svg>
 ```
 
-## <img src="https://github.com/Viglino/pinhead-font/blob/main/svg/edit/uEA51-copy-poly.svg" height="35" align="left" />Contributing
+## <img src="https://github.com/Viglino/pinhead-font/blob/main/svg/hand_tools/uEB44-brick_trowel.svg" height="35" align="left" />Contributing
 Please use the [GitHub issue tracker](https://github.com/Viglino/pinhead-font/issues) to ask for new features 
 or create a pull request.    
 Font is created from the files in the `./svg` folder, you only have to create a new file in this folder. 
@@ -66,7 +66,7 @@ npm start
 ```
 
 
-## <img src="https://github.com/Viglino/pinhead-font/blob/main/svg/map/uEA7A-map-book.svg" height="35" align="left" />Licenses
+## <img src="https://github.com/Viglino/pinhead-font/blob/main/svg/misc/uEC73-shopping_basket.svg" height="35" align="left" />Licenses
 
 **Pinhead-Font is licensed under [Apache-2.0](https://github.com/Viglino/pinhead-font/blob/main/LICENSE-APACHE.md)**    
 Copyright (c) 2021 Jean-Marc Viglino
@@ -76,17 +76,6 @@ You can use it for commercial projects, open source projects, or really almost w
 [Read full Pinhead-Font license](https://github.com/Viglino/pinhead-font/blob/main/LICENSE.md)
 
 Dual-license can be used for each specific part:
-* Pinhead-Font **font** is licensed under the [SIL OFL 1.1 License](https://github.com/Viglino/pinhead-font/blob/main/LICENSE-OFL.md)
-* **Icons** and **SVG** files are licensed under the [CC BY 4.0 License](https://creativecommons.org/licenses/by/4.0/)
-* **Codes** and all non font or icon files are licensed under the [MIT License](https://github.com/Viglino/pinhead-font/blob/main/LICENSE-MIT.md)
-
-Attribution is required by Apache, MIT, SIL OFL, and CC BY licenses. Pinhead-Font files already 
-contain embedded comments with sufficient attribution, so **you shouldn't need to 
-do anything additional when using these files normally**.
-
-## <img src="https://github.com/Viglino/pinhead-font/blob/main/svg/map/uEB2B-story-maps.svg" height="35" align="left" />Press
-
-* [GIS-Symbole gesucht? Pinhead-Font!](https://geoobserver.wordpress.com/2021/05/06/gis-symbole-gesucht-pinhead-font/)
-* [GIS-Symbole gesucht? Pinhead-Font! | #geoObserver](https://osgis.org/2021/05/gis-symbole-gesucht-pinhead-font-geoobserver/)
-* [Geotribu: Revue de presse du 7 mai 2021](https://static.geotribu.fr/rdp/2021/rdp_2021-05-07/#pinhead-font)
-* [OSGeo icon set](https://wiki.osgeo.org/wiki/OSGeo_icon_set)
+* Pinhead-Font **font** is licensed under the [SIL OFL 1.1 License](./LICENSE-OFL.md)
+* **Icons** and **SVG** files are licensed under the [CC0 License](./LICENCE)
+* **Codes** and all non font or icon files are licensed under the [MIT License](./LICENSE-MIT.md)
