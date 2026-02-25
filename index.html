@@ -1,0 +1,267 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>Pinhead-Font</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<meta name="description" content="Icon font and SVG for use with GIS and spatial analysis tools." />
+	<meta name="keywords" content="svg,font,icons,geo,map,gis,geospacial" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+  <link rel="icon" type="image/png" href="https://raw.githubusercontent.com/Viglino/pinhead-font/main/svg/misc/uec57-pin.svg" />
+  
+  <meta name="twitter:image" content="https://raw.githubusercontent.com/Viglino/pinhead-font/main/pinhead-font.png" />
+  <meta name="twitter:site" content="@viglino" />
+  <meta name="twitter:creator" content="@viglino">
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Pinhead-Font: Quality public domain icon font for your map pins" />
+  <meta name="twitter:description" content="Quality public domain icon font for your map pins. Feel free to use it in your commercial or open source projects." />
+
+  <link href="css/pinhead-font.css?" rel="stylesheet" />
+  <link href="./index.css" rel="stylesheet" />
+  <!--
+    Code highlighting https://tohtml.com/ style Bred3
+  -->
+</head>
+<body>
+  <a href="https://github.com/Viglino/pinhead-font" class="icss-github-corner"><i></i></a>
+  <div id="header">
+    <h1>Pinhead-Font</h1>
+    <p>Quality public domain icon font for your map pins</p>
+    <ul>
+      <li class='fg' onclick="showPage('fg')">
+        Pinhead-Font
+      </li><li class='icons' onclick="showPage('icons')">
+        Icons
+      </li><li class='example' onclick="showPage('example')">
+        Examples
+      </li>
+    </ul>
+  </div>
+
+  <div data-page="fg">
+    <h2>What is Pinhead-Font?</h2>
+    <i class="pin pin-pin pin-5x"></i>
+    <p>
+      <i>Quality public domain icons for your map pins</i>
+      <br/>
+      <br/>
+      <a href="https://github.com/waysidemapping/pinhead">Pinhead</a> has 1,000+ icons and counting, including standardized versions of the most popular public domain 
+      cartographic icon sets: Maki, Temaki, OSM Carto, and NPMap.
+    </p>
+
+    <h2>How to use it?</h2>
+    <p>
+      You can use Pinhead-Font as a font or as SVG symbols or images.
+      <br/>
+      Please refer to the <a href="https://github.com/waysidemapping/pinhead">Pinhead repository</a> for SVG files.
+    </p>
+    <p>
+      To use it in a web page, just add the css in your project.
+    </p>
+<pre style="width: 100%; color:#000000;background:#f1f0f0;"><span style="color:#a65700; ">&lt;</span><span style="color:#400000; font-weight:bold; ">link</span><span style="color:#074726; "> </span><span style="color:#074726; ">href</span><span style="color:#806030; ">=</span><span style="color:#e60000; ">"https://viglino.github.io/pinhead-font/css/pinhead-font.css"</span><span style="color:#074726; "> </span><span style="color:#074726; ">rel</span><span style="color:#806030; ">=</span><span style="color:#e60000; ">"stylesheet"</span><span style="color:#074726; "> </span><span style="color:#a65700; ">/&gt;</span></pre>
+          
+    <p>
+      Then use an inline element with a class prefixed with pin- to add a new icon.
+    </p>
+<pre style="color:#000000;background:#f1f0f0;"><span style="color:#a65700; ">&lt;</span><span style="color:#400000; font-weight:bold; ">i</span><span style="color:#074726; "> </span><span style="color:#074726; ">class</span><span style="color:#806030; ">=</span><span style="color:#e60000; ">"pin-pin"</span><span style="color:#a65700; ">&gt;</span><span style="color:#a65700; ">&lt;/</span><span style="color:#400000; font-weight:bold; ">i</span><span style="color:#a65700; ">&gt;</span></pre>
+    <i class="pin-pin pin-2x"></i> 
+
+    <p>
+      Using a &lt;span&gt; is more semantically correct but a little bit verbose:
+    </p>
+<pre style="color:#000000;background:#f1f0f0;"><span style="color:#a65700; ">&lt;</span><span style="color:#400000; font-weight:bold; ">span</span><span style="color:#074726; "> </span><span style="color:#074726; ">class</span><span style="color:#806030; ">=</span><span style="color:#e60000; ">"pin-bicyclist"</span><span style="color:#a65700; ">&gt;</span><span style="color:#a65700; ">&lt;/</span><span style="color:#400000; font-weight:bold; ">span</span><span style="color:#a65700; ">&gt;</span></pre>
+    <span class="pin-bicyclist pin-2x"></span> 
+
+      
+    <p>
+      Or use it as an svg sprite (svg sprites are inlocated in the <code>./dist/pinhead-font.svg</code> file):
+    </p>
+<pre style="color:#000000;background:#f1f0f0;"><span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">svg</span> <span style="color:#074726; ">class</span><span style="color:#806030; ">=</span><span style="color:#800000; ">"</span><span style="color:#e60000; ">pinhead-font pin-2x</span><span style="color:#800000; ">"</span><span style="color:#a65700; ">&gt;</span>
+  <span style="color:#a65700; ">&lt;</span><span style="color:#5f5035; ">use</span> <span style="color:#007997; ">xlink</span><span style="color:#806030; ">:</span><span style="color:#074726; ">href</span><span style="color:#806030; ">=</span><span style="color:#800000; ">"</span><span style="color:#e60000; ">path/to/dist/pinhead-font.svg#pin-polyline-pt</span><span style="color:#800000; ">"</span> <span style="color:#a65700; ">/&gt;</span>
+<span style="color:#a65700; ">&lt;/</span><span style="color:#5f5035; ">svg</span><span style="color:#a65700; ">&gt;</span>
+</pre>
+    <svg class="pinhead-font pin-2x">
+      <use xlink:href="./dist/pinhead-font.svg#pin-bicyclist" />
+    </svg>
+
+    <br style="clear: both;" />
+<!--
+    <h2>NPM package</h2>
+    <p>
+      Pinhead-Font is avaliable on NPM.   
+      To use Pinhead-Font in your project, 
+      install the <a href="https://www.npmjs.com/package/pinhead-font">pinhead-font</a> package:
+      <pre style="width:100%; color:#000000;background:#f1f0f0;"><span style="color:#005fd2; ">npm</span> <span style="color:#e60000; ">install</span> <span style="color:#e60000; ">--save</span> <span style="color:#e60000; ">pinhead-font</span></pre>
+    </p>
+    <p>
+      The font is located in the <code>./font</code> directory, 
+      the css and svg sprites are located in the 
+      <code>./css/pinhead-font.css</code> and <code>./dist/pinhead-font.svg</code> 
+      files of the pinhead-font project.
+    </p>
+-->
+  </div>
+
+  <div data-page="icons">
+    <div id="icon">
+      <div>
+        <i class="pin-pin pin-5x"></i>
+        <i class="pin-pin pin-4x"></i>
+        <i class="pin-pin pin-3x"></i>
+        <i class="pin-pin pin-2x"></i>
+        <i class="pin-pin pin-1x"></i>
+        <button class="color"></button>
+        <select dir="rtl" onclick="save(this.value)">
+          <option value="none">save</option>
+          <option value="svg">SVG</option>
+          <option value="24">PNG 24x24</option>
+          <option value="60">PNG 60x60</option>
+          <option value="100">PNG 100x100</option>
+          <option value="200">PNG 200x200</option>
+          <option value="1000">PNG 1000x1000</option>
+          <option value="all">Save all SVG (colored)</option>
+        </select>
+        <br/>
+        <h2>pin-pin</h2>
+        <p>
+          Unicode: <span class="code"></span>
+          -
+          Theme: <span class="theme" onclick="search($(this).text())"></span>
+          -
+          <span class="tags"></span>
+        </p>
+      </div>
+    </div>
+    <div id="search">
+      <div>
+        <i class="pin-magnifying_glass_for_search_ui"></i>
+        <input type="search" placeholder="search icon..." />
+        <span class="nb"></span> icons
+        <div class="news" onclick="search('new');">new</div>
+      </div>
+    </div>
+    <div id="content">
+    </div>
+    <dialog id="loading">
+      Loading: <span></span>
+    </dialog>
+  </div>
+  <div data-page="svg">
+    <div id="content">
+    </div>
+  </div>
+
+  <div data-page="example">
+    <h2>Icon size and color</h2>
+    <p>
+      To increase icon sizes relative to their container, 
+      use the <code>pin-lg</code> (33% increase), 
+      <code>pin-2x</code>, <code>pin-3x</code>, <code>pin-4x</code>, or <code>pin-5x</code> classes.
+      <br/>
+      <i class="pin-city_gate"></i>
+      <i class="pin-city_gate pin-lg"></i>
+      <i class="pin-city_gate pin-2x"></i>
+      <i class="pin-city_gate pin-3x"></i>
+      <i class="pin-city_gate pin-4x"></i>
+      <i class="pin-city_gate pin-5x"></i>
+    </p>
+    <p>
+      Use CSS color to change font color:
+      <br/>
+      <i class="pin-flash_camera pin-2x" style="color:#800;"></i>
+      <i class="pin-flash_camera pin-2x" style="color:#880;"></i>
+      <i class="pin-flash_camera pin-2x" style="color:#080;"></i>
+      <i class="pin-flash_camera pin-2x" style="color:#088;"></i>
+      <i class="pin-flash_camera pin-2x" style="color:#008;"></i>
+      <i class="pin-flash_camera pin-2x" style="color:#808;"></i>
+    </p>
+    <h2>Fixed width icons</h2>
+    <p>
+      Use <code>pin-fw</code> class to set icons at a fixed width. 
+      Especially designed to use in nav lists & list groups to preserve alignment.
+      <ul>
+        <li>
+          <i class="pin-bus_with_destination_display pin-fw pin-2x"></i> Bus with destination
+        </li>
+        <li>
+          <i class="pin-compact_box_truck pin-fw pin-2x"></i> Compact box truck
+        </li>
+        <li>
+          <i class="pin-bicycle_in_locker pin-fw pin-2x"></i> Bicycle in locker
+        </li>
+        <li>
+          <i class="pin-jet_plane_front pin-fw pin-2x"></i> Jet plane
+        </li>
+      </ul>
+    </p>
+    <h2>Rotated and flipped icons</h2>
+    <p>
+      Use <code>pin-rotate</code> classes to rotate icons (-20, -10, 10, 20, 45, 90, 135, 180, 225, 270 or 315).
+      <br/> 
+      <i class="pin-axe pin-2x"></i> 
+      <i class="pin-axe pin-rotate-10 pin-2x"></i> 
+      <i class="pin-axe pin-rotate10 pin-2x"></i> 
+      <i class="pin-axe pin-rotate-20 pin-2x"></i> 
+      <i class="pin-axe pin-rotate20 pin-2x"></i> 
+    </p>
+    <p>
+      Use <code>pin-flipv</code> or <code>pin-fliph</code> classes to flip icons vertically or horizontally.
+      <br/> 
+      <i class="pin-bicyclist_on_crosswalk pin-2x"></i> 
+      <i class="pin-bicyclist_on_crosswalk pin-fliph pin-2x"></i> 
+      <i class="pin-bicyclist_on_crosswalk pin-flipv pin-2x"></i> 
+    </p>
+    <h2>Stacked icons</h2>
+    <p>
+      To stack multiple icons, use the <code>pin-stack</code> class on the parent.
+<pre style="color:#000000;background:#f1f0f0;"><span style="color:#a65700; ">&lt;</span><span style="color:#400000; font-weight:bold; ">span</span><span style="color:#074726; "> </span><span style="color:#074726; ">class</span><span style="color:#806030; ">=</span><span style="color:#e60000; ">"pin-stack pin-3x"</span><span style="color:#a65700; ">&gt;</span>
+  <span style="color:#a65700; ">&lt;</span><span style="color:#400000; font-weight:bold; ">i</span><span style="color:#074726; "> </span><span style="color:#074726; ">class</span><span style="color:#806030; ">=</span><span style="color:#e60000; ">"pin-circle_outline"</span><span style="color:#074726; "> </span><span style="color:#074726; ">style</span><span style="color:#806030; ">=</span><span style="color:#e60000; ">"</span><span style="color:#bb7977; font-weight:bold; ">color</span><span style="color:#806030; ">:</span><span style="color:#8c0000; ">#</span><span style="color:#c00000; ">666</span><span style="color:#806030; ">;</span><span style="color:#e60000; ">"</span><span style="color:#a65700; ">&gt;</span><span style="color:#a65700; ">&lt;/</span><span style="color:#400000; font-weight:bold; ">i</span><span style="color:#a65700; ">&gt;</span> 
+  <span style="color:#a65700; ">&lt;</span><span style="color:#400000; font-weight:bold; ">i</span><span style="color:#074726; "> </span><span style="color:#074726; ">class</span><span style="color:#806030; ">=</span><span style="color:#e60000; ">"pin-diamond_tall pin-rotate45"</span><span style="color:#074726; "> </span><span style="color:#074726; ">style</span><span style="color:#806030; ">=</span><span style="color:#e60000; ">"</span><span style="color:#bb7977; font-weight:bold; ">color</span><span style="color:#806030; ">:</span><span style="color:#8c0000; ">#</span><span style="color:#c00000; ">800</span><span style="color:#806030; ">;</span><span style="color:#e60000; ">"</span><span style="color:#a65700; ">&gt;</span><span style="color:#a65700; ">&lt;/</span><span style="color:#400000; font-weight:bold; ">i</span><span style="color:#a65700; ">&gt;</span> 
+<span style="color:#a65700; ">&lt;/</span><span style="color:#400000; font-weight:bold; ">span</span><span style="color:#a65700; ">&gt;</span></pre>
+      <br/>
+      <span class="pin-stack pin-3x">
+        <i class="pin-circle_outline" style="color:#666;"></i> 
+        <i class="pin-diamond_tall pin-rotate45" style="color: #c00;"></i> 
+      </span>
+    </p>
+
+    <h2>Animations</h2>
+    <p>
+      Use <code>pin-spin</code> or <code>pin-pulse</code> classes to animate icons.
+    </p>
+    <span class="pin-stack pin-3x">
+      <i class="pin-circle_outline" style="color:#666;"></i> 
+      <i class="pin-diamond_tall pin-spin" style="color: #c00;"></i> 
+    </span>
+    ...spin or pulse...
+    <span class="pin-stack pin-3x">
+      <i class="pin-circle_outline" style="color:#666;"></i> 
+      <i class="pin-diamond_tall pin-pulse" style="color: #c00;"></i> 
+    </span>
+  </div>
+
+  <div id="footer">
+		<div>
+			<a href="https://github.com/Viglino/pinhead-font">
+				<img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" />
+				<span class="stretch">Fork me on Github</span>
+			</a>
+		</div>
+	</div>
+
+  <!-- jQuery -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <!-- filesaver-js -->
+  <script type="text/javascript" src="https://cdn.rawgit.com/eligrey/FileSaver.js/aa9f4e0e/FileSaver.min.js"></script>
+  <!-- Color picker -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@r-tek/colr_pickr@2.0.0/build/colr_pickr.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@r-tek/colr_pickr@2.0.0/build/colr_pickr.min.css" />
+
+  <script type="text/javascript" src="./index.js"></script>
+
+  <!-- Social buttons -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+</body>

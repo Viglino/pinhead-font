@@ -1,0 +1,1218 @@
+/* pinhead-font - v.1.0.0 
+ * Quality public domain icons for your map pins
+ * 2026 (c) Jean-Marc Viglino - Apache-2.0
+ * https://github.com/Viglino/pinhead-font
+ */
+@font-face {
+  font-family: "pinhead-font";
+  src: url('../fonts/pinhead-font.eot?t=1772010913173');
+  src: url('../fonts/pinhead-font.eot?#iefix') format('eot'),
+    url('../fonts/pinhead-font.woff2?t=1772010913173') format('woff2'),
+    url('../fonts/pinhead-font.woff?t=1772010913173') format('woff'),
+    url('../fonts/pinhead-font.ttf?t=1772010913173') format('truetype'),
+    url('../fonts/pinhead-font.svg#pinhead-font') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.pinhead-font {
+  width: 1em;
+  height: 1em;
+}
+
+[class^="pin-"]:before, [class*="pin-"]:before {
+  font-family: "pinhead-font";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  text-align: center;
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="pin-"] {
+  display: inline-block;
+}
+.pin-lg {
+  font-size: 1.3333333333333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+.pin-2x { font-size: 2em; }
+.pin-3x { font-size: 3em; }
+.pin-4x { font-size: 4em; }
+.pin-5x { font-size: 5em; }
+.pin-fw {
+  width: 1.2857142857142858em;
+  text-align: center;
+}
+
+.pin-rotate10 {
+  -webkit-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+.pin-rotate-10 {
+  -webkit-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+.pin-rotate20 {
+  -webkit-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
+.pin-rotate-20 {
+  -webkit-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+}
+.pin-rotate45 {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.pin-rotate90 {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.pin-rotate135 {
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+.pin-rotate180 {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.pin-rotate225 {
+  -webkit-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+.pin-rotate270 {
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.pin-rotate315 {
+  -webkit-transform: rotate(315deg);
+  -ms-transform: rotate(315deg);
+  transform: rotate(315deg);
+}
+
+.pin-fliph {
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+.pin-flipv {
+  -webkit-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+
+.pin-stack {
+  position: relative;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  line-height: 1em;
+  vertical-align: middle;
+}
+.pin-stack [class^="pin-"] {
+  position: absolute;
+}
+
+.pin-spin {
+  -webkit-animation: pin-spin 2s infinite linear;
+  animation: pin-spin 2s infinite linear;
+}
+.pin-pulse {
+  -webkit-animation: pin-spin 1s infinite steps(8);
+  animation: pin-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes pin-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes pin-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+.pin-ampersand:before { content: "\ea15"; }
+.pin-arrows_recirculating:before { content: "\ea16"; }
+.pin-arrows_up_down_in_left_right_brackets:before { content: "\ea17"; }
+.pin-arrow_bottom_right_to_eight_point_asterisk:before { content: "\ea18"; }
+.pin-arrow_down_to_down_bracket:before { content: "\ea19"; }
+.pin-arrow_left_to_left_bracket:before { content: "\ea1a"; }
+.pin-arrow_right:before { content: "\ea1b"; }
+.pin-arrow_right_to_right_bracket:before { content: "\ea1c"; }
+.pin-arrow_top_right_from_square_outline:before { content: "\ea1d"; }
+.pin-arrow_up_from_down_bracket:before { content: "\ea1e"; }
+.pin-arrow_up_to_up_bracket:before { content: "\ea1f"; }
+.pin-at_sign:before { content: "\ea20"; }
+.pin-bolt:before { content: "\ea21"; }
+.pin-checkmark:before { content: "\ea22"; }
+.pin-chicane_arrow:before { content: "\ea23"; }
+.pin-club:before { content: "\ea24"; }
+.pin-cylinder:before { content: "\ea25"; }
+.pin-dollar:before { content: "\ea26"; }
+.pin-dollar_swap_to_euro:before { content: "\ea27"; }
+.pin-dot_with_rays_up:before { content: "\ea28"; }
+.pin-family_restroom_symbol:before { content: "\ea29"; }
+.pin-hands_sign_language_interpretation:before { content: "\ea2a"; }
+.pin-heart_with_bolt:before { content: "\ea2b"; }
+.pin-heart_with_crack:before { content: "\ea2c"; }
+.pin-heart_with_ecg_line:before { content: "\ea2d"; }
+.pin-info_i:before { content: "\ea2e"; }
+.pin-international_wheelchair_symbol:before { content: "\ea2f"; }
+.pin-magnifying_glass_for_search_ui:before { content: "\ea30"; }
+.pin-map_outline_with_info_i:before { content: "\ea31"; }
+.pin-map_outline_with_swap_arrows:before { content: "\ea32"; }
+.pin-mens_restroom_symbol:before { content: "\ea33"; }
+.pin-ordnance_survey_benchmark:before { content: "\ea34"; }
+.pin-parking_p:before { content: "\ea35"; }
+.pin-plus_squat:before { content: "\ea36"; }
+.pin-radiation_symbol:before { content: "\ea37"; }
+.pin-recycling_symbol:before { content: "\ea38"; }
+.pin-spade:before { content: "\ea39"; }
+.pin-triangle_up_with_exclamation_point:before { content: "\ea3a"; }
+.pin-venus:before { content: "\ea3b"; }
+.pin-wifi:before { content: "\ea3c"; }
+.pin-womens_and_mens_restroom_symbol:before { content: "\ea3d"; }
+.pin-womens_restroom_symbol:before { content: "\ea3e"; }
+.pin-x:before { content: "\ea3f"; }
+.pin-x_cross:before { content: "\ea40"; }
+.pin-x_oblique:before { content: "\ea41"; }
+.pin-yen_yuan:before { content: "\ea42"; }
+.pin-y_junction:before { content: "\ea43"; }
+.pin-angelfish:before { content: "\ea44"; }
+.pin-bear:before { content: "\ea45"; }
+.pin-beaver_in_water:before { content: "\ea46"; }
+.pin-bird:before { content: "\ea47"; }
+.pin-bird_flying:before { content: "\ea48"; }
+.pin-bison:before { content: "\ea49"; }
+.pin-bull:before { content: "\ea4a"; }
+.pin-cat_sitting:before { content: "\ea4b"; }
+.pin-comb_and_dog_wearing_collar:before { content: "\ea4c"; }
+.pin-coral:before { content: "\ea4d"; }
+.pin-coral_and_angelfish:before { content: "\ea4e"; }
+.pin-crab:before { content: "\ea4f"; }
+.pin-deer_head:before { content: "\ea50"; }
+.pin-deer_head_with_antlers:before { content: "\ea51"; }
+.pin-deer_with_antlers:before { content: "\ea52"; }
+.pin-dog_wearing_collar:before { content: "\ea53"; }
+.pin-fillet_knife_and_fish:before { content: "\ea54"; }
+.pin-fish:before { content: "\ea55"; }
+.pin-fishes:before { content: "\ea56"; }
+.pin-fish_and_hook:before { content: "\ea57"; }
+.pin-fish_and_hook_under_ice:before { content: "\ea58"; }
+.pin-fish_jumping_up_cascade:before { content: "\ea59"; }
+.pin-giraffe:before { content: "\ea5a"; }
+.pin-lion:before { content: "\ea5b"; }
+.pin-pawprint:before { content: "\ea5c"; }
+.pin-pawprint_with_greek_cross:before { content: "\ea5d"; }
+.pin-pixel_invader:before { content: "\ea5e"; }
+.pin-rattlesnake:before { content: "\ea5f"; }
+.pin-sea_lion:before { content: "\ea60"; }
+.pin-sea_star:before { content: "\ea61"; }
+.pin-spiky_fish:before { content: "\ea62"; }
+.pin-spiky_fish_with_x:before { content: "\ea63"; }
+.pin-turtle_top:before { content: "\ea64"; }
+.pin-waterfowl:before { content: "\ea65"; }
+.pin-whale_tail_in_water:before { content: "\ea66"; }
+.pin-barricade:before { content: "\ea67"; }
+.pin-bicycle_barrier:before { content: "\ea68"; }
+.pin-bollard:before { content: "\ea69"; }
+.pin-bollard_row:before { content: "\ea6a"; }
+.pin-buffer_stop:before { content: "\ea6b"; }
+.pin-car_under_height_restrictor:before { content: "\ea6c"; }
+.pin-cattle_grid:before { content: "\ea6d"; }
+.pin-fence:before { content: "\ea6e"; }
+.pin-gate:before { content: "\ea6f"; }
+.pin-gate_tall:before { content: "\ea70"; }
+.pin-height_restrictor:before { content: "\ea71"; }
+.pin-jail_door:before { content: "\ea72"; }
+.pin-kerb_flush:before { content: "\ea73"; }
+.pin-kerb_flush_under_shoe:before { content: "\ea74"; }
+.pin-kerb_lowered:before { content: "\ea75"; }
+.pin-kerb_lowered_under_shoe:before { content: "\ea76"; }
+.pin-kerb_raised:before { content: "\ea77"; }
+.pin-kerb_raised_under_shoe:before { content: "\ea78"; }
+.pin-kerb_rolled:before { content: "\ea79"; }
+.pin-kerb_rolled_under_shoe:before { content: "\ea7a"; }
+.pin-lift_gate:before { content: "\ea7b"; }
+.pin-lift_gate_lowered:before { content: "\ea7c"; }
+.pin-low_mounted_beam:before { content: "\ea7d"; }
+.pin-no_entry:before { content: "\ea7e"; }
+.pin-picket_fence:before { content: "\ea7f"; }
+.pin-portable_fence:before { content: "\ea80"; }
+.pin-rope_fence:before { content: "\ea81"; }
+.pin-rumble_strip:before { content: "\ea82"; }
+.pin-speed_bump:before { content: "\ea83"; }
+.pin-speed_dip:before { content: "\ea84"; }
+.pin-speed_dip_double:before { content: "\ea85"; }
+.pin-speed_hump:before { content: "\ea86"; }
+.pin-speed_table:before { content: "\ea87"; }
+.pin-spike_strip:before { content: "\ea88"; }
+.pin-squeeze_stile:before { content: "\ea89"; }
+.pin-stone_wall:before { content: "\ea8a"; }
+.pin-swinging_doors:before { content: "\ea8b"; }
+.pin-toll_booth:before { content: "\ea8c"; }
+.pin-toll_gantry:before { content: "\ea8d"; }
+.pin-traffic_cone:before { content: "\ea8e"; }
+.pin-trench:before { content: "\ea8f"; }
+.pin-turnstile:before { content: "\ea90"; }
+.pin-electrical_circuit_and_bolt:before { content: "\eac6"; }
+.pin-electrical_current_transformer_and_bolt:before { content: "\eac7"; }
+.pin-electrical_curved_circuit_breaker_and_bolt:before { content: "\eac8"; }
+.pin-electrical_isolator_and_bolt:before { content: "\eac9"; }
+.pin-electrical_lightning_arrestor_and_bolt:before { content: "\eaca"; }
+.pin-electrical_square_circuit_breaker_and_bolt:before { content: "\eacb"; }
+.pin-electrical_switch_and_bolt:before { content: "\eacc"; }
+.pin-electrical_transformer_and_bolt:before { content: "\eacd"; }
+.pin-apple:before { content: "\eace"; }
+.pin-bagel:before { content: "\eacf"; }
+.pin-bagel_seeded:before { content: "\ead0"; }
+.pin-baguette:before { content: "\ead1"; }
+.pin-barbecue_grill_wheeled_with_steam:before { content: "\ead2"; }
+.pin-barbecue_grill_with_steam:before { content: "\ead3"; }
+.pin-beer_bottles_row:before { content: "\ead4"; }
+.pin-beer_mug_with_foam:before { content: "\ead5"; }
+.pin-burger:before { content: "\ead6"; }
+.pin-burger_and_drink_cup_with_straw:before { content: "\ead7"; }
+.pin-can:before { content: "\ead8"; }
+.pin-champagne_bottle_and_champagne_glass:before { content: "\ead9"; }
+.pin-cocktail:before { content: "\eada"; }
+.pin-coffee_bean:before { content: "\eadb"; }
+.pin-coffee_mug_with_steam:before { content: "\eadc"; }
+.pin-croissant:before { content: "\eadd"; }
+.pin-cup_and_saucer:before { content: "\eade"; }
+.pin-donut:before { content: "\eadf"; }
+.pin-drink_bottle_and_drink_cup_with_straw:before { content: "\eae0"; }
+.pin-drink_cup_with_straw:before { content: "\eae1"; }
+.pin-drink_cup_with_straw_and_boba:before { content: "\eae2"; }
+.pin-egg:before { content: "\eae3"; }
+.pin-grapes:before { content: "\eae4"; }
+.pin-handled_bowl_with_steam:before { content: "\eae5"; }
+.pin-hard_candy_in_wrapper:before { content: "\eae6"; }
+.pin-hot_dog_with_mustard:before { content: "\eae7"; }
+.pin-ice_cream_on_cone:before { content: "\eae8"; }
+.pin-japanese_teacup_with_steam:before { content: "\eae9"; }
+.pin-jar:before { content: "\eaea"; }
+.pin-jug_and_apple:before { content: "\eaeb"; }
+.pin-loaf_of_bread:before { content: "\eaec"; }
+.pin-loaf_of_bread_with_steam:before { content: "\eaed"; }
+.pin-loaf_of_pan_bread:before { content: "\eaee"; }
+.pin-loaf_of_pan_bread_with_steam:before { content: "\eaef"; }
+.pin-meat:before { content: "\eaf0"; }
+.pin-milk_churn:before { content: "\eaf1"; }
+.pin-noodle_bowl_and_chopsticks_with_noodles:before { content: "\eaf2"; }
+.pin-pint_glass:before { content: "\eaf3"; }
+.pin-pizza_slice:before { content: "\eaf4"; }
+.pin-pot:before { content: "\eaf5"; }
+.pin-sausage:before { content: "\eaf6"; }
+.pin-spice_bottle:before { content: "\eaf7"; }
+.pin-sub_sandwich:before { content: "\eaf8"; }
+.pin-sushi:before { content: "\eaf9"; }
+.pin-teapot:before { content: "\eafa"; }
+.pin-tea_bag:before { content: "\eafb"; }
+.pin-temaki:before { content: "\eafc"; }
+.pin-to_go_cup_with_cup_sleeve:before { content: "\eafd"; }
+.pin-vertical_rotisserie:before { content: "\eafe"; }
+.pin-water_bottle:before { content: "\eaff"; }
+.pin-water_glass:before { content: "\eb00"; }
+.pin-wine_bottle:before { content: "\eb01"; }
+.pin-wine_bottle_and_wine_glass:before { content: "\eb02"; }
+.pin-wine_glass:before { content: "\eb03"; }
+.pin-airport_terminal:before { content: "\ea91"; }
+.pin-airport_terminal_with_plane_takeoff:before { content: "\ea92"; }
+.pin-army_tent:before { content: "\ea93"; }
+.pin-barn:before { content: "\ea94"; }
+.pin-barn_and_silo:before { content: "\ea95"; }
+.pin-bunker:before { content: "\ea96"; }
+.pin-cabin:before { content: "\ea97"; }
+.pin-cabin_with_chimney:before { content: "\ea98"; }
+.pin-campsite:before { content: "\ea99"; }
+.pin-castle:before { content: "\ea9a"; }
+.pin-castle_keep:before { content: "\ea9b"; }
+.pin-chapel:before { content: "\ea9c"; }
+.pin-city_buildings:before { content: "\ea9d"; }
+.pin-city_gate:before { content: "\ea9e"; }
+.pin-classical_building:before { content: "\ea9f"; }
+.pin-classical_building_with_clock:before { content: "\eaa0"; }
+.pin-classical_building_with_dome_and_flag:before { content: "\eaa1"; }
+.pin-classical_building_with_flag:before { content: "\eaa2"; }
+.pin-commercial_building:before { content: "\eaa3"; }
+.pin-entrance_station:before { content: "\eaa4"; }
+.pin-fort:before { content: "\eaa5"; }
+.pin-fortress:before { content: "\eaa6"; }
+.pin-garage:before { content: "\eaa7"; }
+.pin-garage_and_key:before { content: "\eaa8"; }
+.pin-gazebo:before { content: "\eaa9"; }
+.pin-hangar:before { content: "\eaaa"; }
+.pin-house_and_industrial_building_and_lowrise_building:before { content: "\eaab"; }
+.pin-house_with_chimney:before { content: "\eaac"; }
+.pin-house_with_flag:before { content: "\eaad"; }
+.pin-industrial_building:before { content: "\eaae"; }
+.pin-latrine:before { content: "\eaaf"; }
+.pin-lowrise_building:before { content: "\eab0"; }
+.pin-lowrise_building_and_tree_on_ground:before { content: "\eab1"; }
+.pin-manor:before { content: "\eab2"; }
+.pin-manufactured_home:before { content: "\eab3"; }
+.pin-marae:before { content: "\eab4"; }
+.pin-market_stall:before { content: "\eab5"; }
+.pin-observatory_dome:before { content: "\eab6"; }
+.pin-office_building_with_flag:before { content: "\eab7"; }
+.pin-paifang:before { content: "\eab8"; }
+.pin-palace:before { content: "\eab9"; }
+.pin-place_of_worship_building:before { content: "\eaba"; }
+.pin-room:before { content: "\eabb"; }
+.pin-round_structure_with_flag:before { content: "\eabc"; }
+.pin-row_houses:before { content: "\eabd"; }
+.pin-skyscraper_on_ground:before { content: "\eabe"; }
+.pin-storage_tank:before { content: "\eabf"; }
+.pin-tents:before { content: "\eac0"; }
+.pin-thatched_roof_hut:before { content: "\eac1"; }
+.pin-torii:before { content: "\eac2"; }
+.pin-town_buildings:before { content: "\eac3"; }
+.pin-village_buildings:before { content: "\eac4"; }
+.pin-watermill_on_water:before { content: "\eac5"; }
+.pin-bookmark:before { content: "\eb04"; }
+.pin-bookmark_outline:before { content: "\eb05"; }
+.pin-chevron_up_tall:before { content: "\eb06"; }
+.pin-chevron_up_tall_outline:before { content: "\eb07"; }
+.pin-circle:before { content: "\eb08"; }
+.pin-circle_outline:before { content: "\eb09"; }
+.pin-circle_outline_with_dot:before { content: "\eb0a"; }
+.pin-circle_outline_with_dot_outline:before { content: "\eb0b"; }
+.pin-circle_outline_with_top_left_quarter_and_bottom_right_quarter:before { content: "\eb0c"; }
+.pin-circle_with_dot:before { content: "\eb0d"; }
+.pin-circle_with_dot_outline:before { content: "\eb0e"; }
+.pin-crescent:before { content: "\eb0f"; }
+.pin-diamond:before { content: "\eb10"; }
+.pin-diamond_outline:before { content: "\eb11"; }
+.pin-diamond_tall:before { content: "\eb12"; }
+.pin-diamond_tall_outline:before { content: "\eb13"; }
+.pin-dot:before { content: "\eb14"; }
+.pin-dot_outline:before { content: "\eb15"; }
+.pin-droplet:before { content: "\eb16"; }
+.pin-droplet_with_greek_cross:before { content: "\eb17"; }
+.pin-greek_cross:before { content: "\eb18"; }
+.pin-heart:before { content: "\eb19"; }
+.pin-heart_outine_with_top_left_quarter:before { content: "\eb1a"; }
+.pin-heart_outline:before { content: "\eb1b"; }
+.pin-heart_outline_with_left_half:before { content: "\eb1c"; }
+.pin-heart_outline_with_left_half_and_bottom_right_quarter:before { content: "\eb1d"; }
+.pin-heart_with_greek_cross:before { content: "\eb1e"; }
+.pin-heavy_six_point_asterisk:before { content: "\eb1f"; }
+.pin-map_outline:before { content: "\eb20"; }
+.pin-map_pin:before { content: "\eb21"; }
+.pin-map_pin_outline:before { content: "\eb22"; }
+.pin-map_pin_with_dot:before { content: "\eb23"; }
+.pin-medal_ribbon:before { content: "\eb24"; }
+.pin-octagon:before { content: "\eb25"; }
+.pin-rectangle:before { content: "\eb26"; }
+.pin-rectangle_outline:before { content: "\eb27"; }
+.pin-rectangle_tall:before { content: "\eb28"; }
+.pin-rectangle_tall_outline:before { content: "\eb29"; }
+.pin-square:before { content: "\eb2a"; }
+.pin-square_outline:before { content: "\eb2b"; }
+.pin-star:before { content: "\eb2c"; }
+.pin-star_outline:before { content: "\eb2d"; }
+.pin-three_dot_horizontal_line:before { content: "\eb2e"; }
+.pin-three_dot_horizontal_line_in_rectangle:before { content: "\eb2f"; }
+.pin-three_dot_vertical_line:before { content: "\eb30"; }
+.pin-three_dot_vertical_line_in_rectangle:before { content: "\eb31"; }
+.pin-triangles_left_right:before { content: "\eb32"; }
+.pin-triangles_left_right_in_rectangle:before { content: "\eb33"; }
+.pin-triangles_up_down:before { content: "\eb34"; }
+.pin-triangles_up_down_in_rectangle:before { content: "\eb35"; }
+.pin-triangle_down:before { content: "\eb36"; }
+.pin-triangle_down_outline:before { content: "\eb37"; }
+.pin-triangle_down_squat:before { content: "\eb38"; }
+.pin-triangle_up:before { content: "\eb39"; }
+.pin-triangle_up_outline:before { content: "\eb3a"; }
+.pin-two_dot_horizontal_line_in_rectangle:before { content: "\eb3b"; }
+.pin-two_dot_vertical_line_in_rectangle:before { content: "\eb3c"; }
+.pin-anvil_and_mallet:before { content: "\eb3d"; }
+.pin-archery_arrow:before { content: "\eb3e"; }
+.pin-archery_bow:before { content: "\eb3f"; }
+.pin-archery_bow_and_archery_arrow:before { content: "\eb40"; }
+.pin-axe:before { content: "\eb41"; }
+.pin-axe_and_chipped_log:before { content: "\eb42"; }
+.pin-axe_and_firewood_pile:before { content: "\eb43"; }
+.pin-brick_trowel:before { content: "\eb44"; }
+.pin-chainsaw:before { content: "\eb45"; }
+.pin-chefs_knife:before { content: "\eb46"; }
+.pin-cigarette:before { content: "\eb47"; }
+.pin-cigarette_with_smoke_curl:before { content: "\eb48"; }
+.pin-cleaver:before { content: "\eb49"; }
+.pin-comb:before { content: "\eb4a"; }
+.pin-dagger:before { content: "\eb4b"; }
+.pin-dumbbell:before { content: "\eb4c"; }
+.pin-field_hockey_stick:before { content: "\eb4d"; }
+.pin-field_hockey_stick_with_ball:before { content: "\eb4e"; }
+.pin-fillet_knife:before { content: "\eb4f"; }
+.pin-fire_extinguisher:before { content: "\eb50"; }
+.pin-fork:before { content: "\eb51"; }
+.pin-fork_and_knife:before { content: "\eb52"; }
+.pin-gavel_with_sound_block:before { content: "\eb53"; }
+.pin-hair_dryer:before { content: "\eb54"; }
+.pin-hammer:before { content: "\eb55"; }
+.pin-key:before { content: "\eb56"; }
+.pin-knife:before { content: "\eb57"; }
+.pin-microphone:before { content: "\eb58"; }
+.pin-needle:before { content: "\eb59"; }
+.pin-needle_and_spool_of_thread:before { content: "\eb5a"; }
+.pin-paint_roller:before { content: "\eb5b"; }
+.pin-perfume_bottle_with_spray:before { content: "\eb5c"; }
+.pin-pickleball_paddle_with_ball:before { content: "\eb5d"; }
+.pin-pick_hammer:before { content: "\eb5e"; }
+.pin-pick_hammer_with_rocks:before { content: "\eb5f"; }
+.pin-pipe:before { content: "\eb60"; }
+.pin-racquet:before { content: "\eb61"; }
+.pin-scissors_and_comb:before { content: "\eb62"; }
+.pin-scissors_open:before { content: "\eb63"; }
+.pin-showerhead_with_spray:before { content: "\eb64"; }
+.pin-spoon:before { content: "\eb65"; }
+.pin-table_tennis_paddle:before { content: "\eb66"; }
+.pin-tattoo_machine:before { content: "\eb67"; }
+.pin-toothbrush:before { content: "\eb68"; }
+.pin-tube:before { content: "\eb69"; }
+.pin-tube_and_toothbrush:before { content: "\eb6a"; }
+.pin-vacuum_cleaner:before { content: "\eb6b"; }
+.pin-watering_can:before { content: "\eb6c"; }
+.pin-wrench:before { content: "\eb6d"; }
+.pin-wrench_and_hammer:before { content: "\eb6e"; }
+.pin-cape_landform:before { content: "\eb7c"; }
+.pin-cliff_with_rocks:before { content: "\eb7d"; }
+.pin-geyser:before { content: "\eb7e"; }
+.pin-geyser_from_ground:before { content: "\eb7f"; }
+.pin-house_and_trees_on_hill_in_water:before { content: "\eb80"; }
+.pin-mountain:before { content: "\eb81"; }
+.pin-mountains_and_lake:before { content: "\eb82"; }
+.pin-mountain_with_greek_cross:before { content: "\eb83"; }
+.pin-mountain_with_heavy_six_point_asterisk:before { content: "\eb84"; }
+.pin-pointy_rock:before { content: "\eb85"; }
+.pin-snowcapped_mountain:before { content: "\eb86"; }
+.pin-snowcapped_mountain_range:before { content: "\eb87"; }
+.pin-snowcapped_mountain_saddle:before { content: "\eb88"; }
+.pin-snowcapped_mountain_valley:before { content: "\eb89"; }
+.pin-squat_rock:before { content: "\eb8a"; }
+.pin-trapezoidal_rock:before { content: "\eb8b"; }
+.pin-tree_on_hill_in_water:before { content: "\eb8c"; }
+.pin-waterfall:before { content: "\eb8d"; }
+.pin-jp_castle:before { content: "\eb6f"; }
+.pin-jp_cemetery:before { content: "\eb70"; }
+.pin-jp_college:before { content: "\eb71"; }
+.pin-jp_ferry:before { content: "\eb72"; }
+.pin-jp_fire_station:before { content: "\eb73"; }
+.pin-jp_hospital:before { content: "\eb74"; }
+.pin-jp_hot_spring:before { content: "\eb75"; }
+.pin-jp_landmark:before { content: "\eb76"; }
+.pin-jp_lighthouse:before { content: "\eb77"; }
+.pin-jp_monument:before { content: "\eb78"; }
+.pin-jp_police:before { content: "\eb79"; }
+.pin-jp_post:before { content: "\eb7a"; }
+.pin-jp_school:before { content: "\eb7b"; }
+.pin-delicate_arch:before { content: "\eb8e"; }
+.pin-broadleaved_tree:before { content: "\ecb2"; }
+.pin-broadleaved_tree_in_water:before { content: "\ecb3"; }
+.pin-conifer_tree:before { content: "\ecb4"; }
+.pin-daisy:before { content: "\ecb5"; }
+.pin-flower_bouquet:before { content: "\ecb6"; }
+.pin-grass:before { content: "\ecb7"; }
+.pin-grass_in_water:before { content: "\ecb8"; }
+.pin-hedge:before { content: "\ecb9"; }
+.pin-leaf:before { content: "\ecba"; }
+.pin-leafless_tree:before { content: "\ecbb"; }
+.pin-low_shrub:before { content: "\ecbc"; }
+.pin-manicured_grass:before { content: "\ecbd"; }
+.pin-maple_leaf:before { content: "\ecbe"; }
+.pin-palm_tree:before { content: "\ecbf"; }
+.pin-plant:before { content: "\ecc0"; }
+.pin-plant_in_raised_planter:before { content: "\ecc1"; }
+.pin-potted_flower:before { content: "\ecc2"; }
+.pin-saguaro:before { content: "\ecc3"; }
+.pin-shrub:before { content: "\ecc4"; }
+.pin-tree_row:before { content: "\ecc5"; }
+.pin-tree_stump:before { content: "\ecc6"; }
+.pin-tulip:before { content: "\ecc7"; }
+.pin-utv:before { content: "\ea01"; }
+.pin-aerial_cargo_lift:before { content: "\ecdb"; }
+.pin-aerial_cargo_lift_with_crates:before { content: "\ecdc"; }
+.pin-aerial_chairlift_with_skier:before { content: "\ecdd"; }
+.pin-aerial_drag_lift:before { content: "\ecde"; }
+.pin-aerial_gondola:before { content: "\ecdf"; }
+.pin-aerial_j_bar_lift:before { content: "\ece0"; }
+.pin-aerial_platter_lift:before { content: "\ece1"; }
+.pin-aerial_tram:before { content: "\ece2"; }
+.pin-aerial_t_bar_lift:before { content: "\ece3"; }
+.pin-airboat_on_water:before { content: "\ece4"; }
+.pin-atv:before { content: "\ece5"; }
+.pin-baby:before { content: "\ece6"; }
+.pin-baseball_batter:before { content: "\ece7"; }
+.pin-bicycle:before { content: "\ece8"; }
+.pin-bicycle_and_key:before { content: "\ece9"; }
+.pin-bicycle_and_wrench:before { content: "\ecea"; }
+.pin-bicycle_in_locker:before { content: "\eceb"; }
+.pin-bicycle_in_parking_structure:before { content: "\ecec"; }
+.pin-bicycle_on_parking_line:before { content: "\eced"; }
+.pin-bicycle_racer:before { content: "\ecee"; }
+.pin-bicycle_under_shower_spray:before { content: "\ecef"; }
+.pin-bicycle_with_staple_stand:before { content: "\ecf0"; }
+.pin-bicyclist:before { content: "\ecf1"; }
+.pin-bicyclist_on_crosswalk:before { content: "\ecf2"; }
+.pin-boat_on_trailer:before { content: "\ecf3"; }
+.pin-boat_on_trailer_on_ramp_on_water:before { content: "\ecf4"; }
+.pin-boat_racer_on_water:before { content: "\ecf5"; }
+.pin-border_officer_with_open_suitcase:before { content: "\ecf6"; }
+.pin-border_officer_with_stop_arm_with_passport:before { content: "\ecf7"; }
+.pin-box_truck:before { content: "\ecf8"; }
+.pin-bulldozer:before { content: "\ecf9"; }
+.pin-bullet_train_on_railway_track:before { content: "\ecfa"; }
+.pin-bus_with_destination_display:before { content: "\ecfb"; }
+.pin-bus_with_destination_display_and_pantograph:before { content: "\ecfc"; }
+.pin-bus_with_destination_display_within_guideway:before { content: "\ecfd"; }
+.pin-camper_trailer:before { content: "\ecfe"; }
+.pin-camper_trailer_with_waste_dump:before { content: "\ecff"; }
+.pin-canoe_on_ramp_on_water:before { content: "\ed00"; }
+.pin-canoe_on_trailer_on_ramp_on_water:before { content: "\ed01"; }
+.pin-car:before { content: "\ed02"; }
+.pin-carousel:before { content: "\ed03"; }
+.pin-cars_on_barge_on_water:before { content: "\ed04"; }
+.pin-car_and_key:before { content: "\ed05"; }
+.pin-car_and_wrench:before { content: "\ed06"; }
+.pin-car_beside_sleeper_in_bed:before { content: "\ed07"; }
+.pin-car_between_roller_brushes:before { content: "\ed08"; }
+.pin-car_in_parking_structure:before { content: "\ed09"; }
+.pin-car_on_parking_line:before { content: "\ed0a"; }
+.pin-car_under_shower_spray:before { content: "\ed0b"; }
+.pin-car_with_checkmark:before { content: "\ed0c"; }
+.pin-car_with_dollar:before { content: "\ed0d"; }
+.pin-car_with_driver_and_passenger:before { content: "\ed0e"; }
+.pin-car_with_emphasis_marks:before { content: "\ed0f"; }
+.pin-car_with_taxi_checkerboard:before { content: "\ed10"; }
+.pin-climber_with_climbing_rope:before { content: "\ed11"; }
+.pin-compact_box_truck:before { content: "\ed12"; }
+.pin-compact_box_truck_with_greek_cross:before { content: "\ed13"; }
+.pin-compact_box_truck_with_heavy_six_point_asterisk:before { content: "\ed14"; }
+.pin-conveyor_with_chevrons_right:before { content: "\ed15"; }
+.pin-cricket_batter:before { content: "\ed16"; }
+.pin-cross_country_skier:before { content: "\ed17"; }
+.pin-dancer_with_sparkles:before { content: "\ed18"; }
+.pin-diesel_train_on_railway_track:before { content: "\ed19"; }
+.pin-diver_above_water:before { content: "\ed1a"; }
+.pin-dog_sledder:before { content: "\ed1b"; }
+.pin-downhill_skier:before { content: "\ed1c"; }
+.pin-elevator_rider:before { content: "\ed1d"; }
+.pin-elevator_three_riders:before { content: "\ed1e"; }
+.pin-escalator:before { content: "\ed1f"; }
+.pin-ferris_wheel:before { content: "\ed20"; }
+.pin-ferryboat:before { content: "\ed21"; }
+.pin-fighter_jet_plane:before { content: "\ed22"; }
+.pin-flatbed_truck:before { content: "\ed23"; }
+.pin-freight_car:before { content: "\ed24"; }
+.pin-golfer:before { content: "\ed25"; }
+.pin-golfer_and_golf_pin:before { content: "\ed26"; }
+.pin-golfer_and_windmill:before { content: "\ed27"; }
+.pin-golf_cart:before { content: "\ed28"; }
+.pin-hanging_rail_transit_vehicle_with_destination_display:before { content: "\ed29"; }
+.pin-helicopter:before { content: "\ed2a"; }
+.pin-horse_racer:before { content: "\ed2b"; }
+.pin-houseboat_on_water:before { content: "\ed2c"; }
+.pin-ice_skater:before { content: "\ed2d"; }
+.pin-inline_skater:before { content: "\ed2e"; }
+.pin-jeep:before { content: "\ed2f"; }
+.pin-jet_plane_front:before { content: "\ed30"; }
+.pin-jet_skier_on_water:before { content: "\ed31"; }
+.pin-junk_car:before { content: "\ed32"; }
+.pin-kayaker_on_water:before { content: "\ed33"; }
+.pin-kids_train_on_railway_track:before { content: "\ed34"; }
+.pin-military_police_officer_with_stop_arm:before { content: "\ed35"; }
+.pin-monorail_transit_vehicle_with_destination_display:before { content: "\ed36"; }
+.pin-motorboat:before { content: "\ed37"; }
+.pin-motorboater_on_water:before { content: "\ed38"; }
+.pin-motorboat_and_key:before { content: "\ed39"; }
+.pin-motorboat_and_wrench:before { content: "\ed3a"; }
+.pin-motorboat_on_ramp:before { content: "\ed3b"; }
+.pin-motorboat_on_water:before { content: "\ed3c"; }
+.pin-motorcycle:before { content: "\ed3d"; }
+.pin-motorcycle_and_key:before { content: "\ed3e"; }
+.pin-motorcycle_and_wrench:before { content: "\ed3f"; }
+.pin-motorcycle_in_parking_structure:before { content: "\ed40"; }
+.pin-motorcycle_on_parking_line:before { content: "\ed41"; }
+.pin-motor_scooter:before { content: "\ed42"; }
+.pin-mountaineer_with_backpack_climbing_cliff:before { content: "\ed43"; }
+.pin-officer_with_stop_arm:before { content: "\ed44"; }
+.pin-pedal_boater_on_water:before { content: "\ed45"; }
+.pin-pedestrian:before { content: "\ed46"; }
+.pin-pedestrian_and_cyclist:before { content: "\ed47"; }
+.pin-pedestrian_and_cyclist_on_crosswalk:before { content: "\ed48"; }
+.pin-pedestrian_between_walls:before { content: "\ed49"; }
+.pin-pedestrian_holding_shopping_bags:before { content: "\ed4a"; }
+.pin-pedestrian_on_crosswalk:before { content: "\ed4b"; }
+.pin-pedestrian_under_icy_eave:before { content: "\ed4c"; }
+.pin-pedestrian_using_white_cane:before { content: "\ed4d"; }
+.pin-pedestrian_wearing_backpack_holding_hiking_pole:before { content: "\ed4e"; }
+.pin-people_and_person_pointing:before { content: "\ed4f"; }
+.pin-people_sitting_on_seesaw:before { content: "\ed50"; }
+.pin-person_aiming_archery_bow:before { content: "\ed51"; }
+.pin-person_aiming_rifle:before { content: "\ed52"; }
+.pin-person_balancing:before { content: "\ed53"; }
+.pin-person_balancing_on_low_mounted_beam:before { content: "\ed54"; }
+.pin-person_behind_barred_window:before { content: "\ed55"; }
+.pin-person_boarding:before { content: "\ed56"; }
+.pin-person_boarding_aerial_gondola:before { content: "\ed57"; }
+.pin-person_boarding_bullet_train_on_railway_track:before { content: "\ed58"; }
+.pin-person_boarding_bus_with_destination_display:before { content: "\ed59"; }
+.pin-person_boarding_bus_with_destination_display_and_pantograph:before { content: "\ed5a"; }
+.pin-person_boarding_car:before { content: "\ed5b"; }
+.pin-person_boarding_diesel_train_on_railway_track:before { content: "\ed5c"; }
+.pin-person_boarding_ferryboat:before { content: "\ed5d"; }
+.pin-person_boarding_hanging_rail_transit_vehicle_with_destination_display:before { content: "\ed5e"; }
+.pin-person_boarding_kids_train_on_railway_track:before { content: "\ed5f"; }
+.pin-person_boarding_monorail_transit_vehicle_with_destination_display:before { content: "\ed60"; }
+.pin-person_boarding_school_bus:before { content: "\ed61"; }
+.pin-person_boarding_steam_train_on_railway_track:before { content: "\ed62"; }
+.pin-person_boarding_taxi:before { content: "\ed63"; }
+.pin-person_boarding_tram_with_destination_display_and_pantograph_on_tram_track:before { content: "\ed64"; }
+.pin-person_boarding_transit_vehicle_on_railway_track:before { content: "\ed65"; }
+.pin-person_boarding_transit_vehicle_with_destination_display:before { content: "\ed66"; }
+.pin-person_boarding_transit_vehicle_with_destination_display_and_pantograph_on_tram_track:before { content: "\ed67"; }
+.pin-person_boarding_transit_vehicle_with_destination_display_on_railway_track:before { content: "\ed68"; }
+.pin-person_boarding_transit_vehicle_with_destination_display_on_railway_track_under_ground:before { content: "\ed69"; }
+.pin-person_carrying_canoe:before { content: "\ed6a"; }
+.pin-person_falling_on_rough_surface:before { content: "\ed6b"; }
+.pin-person_fishing_from_pier_above_water:before { content: "\ed6c"; }
+.pin-person_hanging_from_horizontal_bar:before { content: "\ed6d"; }
+.pin-person_holding_branches:before { content: "\ed6e"; }
+.pin-person_holding_chestfeeding_baby:before { content: "\ed6f"; }
+.pin-person_holding_open_book:before { content: "\ed70"; }
+.pin-person_in_water:before { content: "\ed71"; }
+.pin-person_in_water_wearing_swim_briefs_holding_bucket:before { content: "\ed72"; }
+.pin-person_in_wheelchair:before { content: "\ed73"; }
+.pin-person_kneeling_and_praying:before { content: "\ed74"; }
+.pin-person_lounging_on_lounger:before { content: "\ed75"; }
+.pin-person_lying_on_front_in_sun_on_surface:before { content: "\ed76"; }
+.pin-person_massaging_person_lying_on_front:before { content: "\ed77"; }
+.pin-person_on_escalator:before { content: "\ed78"; }
+.pin-person_on_ground_dragging_raft_to_water:before { content: "\ed79"; }
+.pin-person_on_inclined_swing:before { content: "\ed7a"; }
+.pin-person_on_swing:before { content: "\ed7b"; }
+.pin-person_padding_raft_on_water:before { content: "\ed7c"; }
+.pin-person_paddling_canoe_on_water:before { content: "\ed7d"; }
+.pin-person_piloting_hang_glider:before { content: "\ed7e"; }
+.pin-person_reaching_up:before { content: "\ed7f"; }
+.pin-person_riding_atv:before { content: "\ed80"; }
+.pin-person_riding_horse:before { content: "\ed81"; }
+.pin-person_riding_in_stroller:before { content: "\ed82"; }
+.pin-person_riding_snowmobile:before { content: "\ed83"; }
+.pin-person_riding_surfboard:before { content: "\ed84"; }
+.pin-person_riding_tube_on_water:before { content: "\ed85"; }
+.pin-person_rowing_rowboat_on_water:before { content: "\ed86"; }
+.pin-person_showering_with_soap_under_shower_spray:before { content: "\ed87"; }
+.pin-person_shushing:before { content: "\ed88"; }
+.pin-person_sitting_in_seat:before { content: "\ed89"; }
+.pin-person_sitting_in_steam_sauna:before { content: "\ed8a"; }
+.pin-person_sitting_on_lifeguard_stand_above_water:before { content: "\ed8b"; }
+.pin-person_slipping_down_cliff:before { content: "\ed8c"; }
+.pin-person_slipping_down_ramp:before { content: "\ed8d"; }
+.pin-person_slipping_down_steps:before { content: "\ed8e"; }
+.pin-person_squatting:before { content: "\ed8f"; }
+.pin-person_squatting_and_person_reaching_up:before { content: "\ed90"; }
+.pin-person_using_mounted_binoculars:before { content: "\ed91"; }
+.pin-pickup_truck:before { content: "\ed92"; }
+.pin-pickup_truck_with_crates:before { content: "\ed93"; }
+.pin-pickup_truck_with_raised_hood:before { content: "\ed94"; }
+.pin-pickup_truck_with_slidein_camper:before { content: "\ed95"; }
+.pin-plane:before { content: "\ed96"; }
+.pin-planes:before { content: "\ed97"; }
+.pin-planes_bidirectional:before { content: "\ed98"; }
+.pin-plane_takeoff_above_ground:before { content: "\ed99"; }
+.pin-plane_taxiing:before { content: "\ed9a"; }
+.pin-police_officer:before { content: "\ed9b"; }
+.pin-police_officer_with_stop_arm:before { content: "\ed9c"; }
+.pin-portrait_of_person_in_hat_in_frame:before { content: "\ed9d"; }
+.pin-profile_of_person_in_hat:before { content: "\ed9e"; }
+.pin-propeller_plane:before { content: "\ed9f"; }
+.pin-public_speaker:before { content: "\eda0"; }
+.pin-rocketship:before { content: "\eda1"; }
+.pin-rocking_horse:before { content: "\eda2"; }
+.pin-roller_brushes:before { content: "\eda3"; }
+.pin-roller_coaster:before { content: "\eda4"; }
+.pin-runner:before { content: "\eda5"; }
+.pin-sail:before { content: "\eda6"; }
+.pin-sailboat:before { content: "\eda7"; }
+.pin-sailboat_on_water:before { content: "\eda8"; }
+.pin-school_bus:before { content: "\eda9"; }
+.pin-scuba_diver:before { content: "\edaa"; }
+.pin-seaplane_takeoff_over_water:before { content: "\edab"; }
+.pin-sedan:before { content: "\edac"; }
+.pin-sedan_with_raised_hood:before { content: "\edad"; }
+.pin-semi_trailer:before { content: "\edae"; }
+.pin-semi_trailer_with_bolt:before { content: "\edaf"; }
+.pin-shipwreck_in_water:before { content: "\edb0"; }
+.pin-shopping_cart:before { content: "\edb1"; }
+.pin-sign_beside_car:before { content: "\edb2"; }
+.pin-sign_beside_pedestrian:before { content: "\edb3"; }
+.pin-sign_beside_taxi:before { content: "\edb4"; }
+.pin-skateboard:before { content: "\edb5"; }
+.pin-skateboarder:before { content: "\edb6"; }
+.pin-ski_jumper:before { content: "\edb7"; }
+.pin-sledder:before { content: "\edb8"; }
+.pin-sleeper:before { content: "\edb9"; }
+.pin-sleepers_in_bunkbeds:before { content: "\edba"; }
+.pin-sleeper_in_bed:before { content: "\edbb"; }
+.pin-snowboarder:before { content: "\edbc"; }
+.pin-snowmobile:before { content: "\edbd"; }
+.pin-snowshoer:before { content: "\edbe"; }
+.pin-soccer_player:before { content: "\edbf"; }
+.pin-spelunker:before { content: "\edc0"; }
+.pin-spring_rider:before { content: "\edc1"; }
+.pin-stagecoach:before { content: "\edc2"; }
+.pin-station_wagon:before { content: "\edc3"; }
+.pin-station_wagon_with_raised_hood:before { content: "\edc4"; }
+.pin-statue:before { content: "\edc5"; }
+.pin-steam_train_on_railway_track:before { content: "\edc6"; }
+.pin-stroller:before { content: "\edc7"; }
+.pin-swimmer_in_water:before { content: "\edc8"; }
+.pin-taxi:before { content: "\edc9"; }
+.pin-tennis_player:before { content: "\edca"; }
+.pin-theater_with_audience:before { content: "\edcb"; }
+.pin-tourboat_on_water:before { content: "\edcc"; }
+.pin-tour_van:before { content: "\edcd"; }
+.pin-towed_skier_on_water:before { content: "\edce"; }
+.pin-tow_truck:before { content: "\edcf"; }
+.pin-tram_profile:before { content: "\edd0"; }
+.pin-tram_with_destination_display_and_pantograph_on_tram_track:before { content: "\edd1"; }
+.pin-transit_vehicle_on_railway_track:before { content: "\edd2"; }
+.pin-transit_vehicle_on_railway_track_between_roller_brushes:before { content: "\edd3"; }
+.pin-transit_vehicle_with_destination_display:before { content: "\edd4"; }
+.pin-transit_vehicle_with_destination_display_and_pantograph_on_tram_track:before { content: "\edd5"; }
+.pin-transit_vehicle_with_destination_display_on_railway_track:before { content: "\edd6"; }
+.pin-transit_vehicle_with_destination_display_on_railway_track_in_tunnel:before { content: "\edd7"; }
+.pin-truck:before { content: "\edd8"; }
+.pin-volleyball_player:before { content: "\edd9"; }
+.pin-waiter_holding_tray_with_wine_glass:before { content: "\edda"; }
+.pin-wheelchair:before { content: "\eddb"; }
+.pin-wind_surfer_on_water:before { content: "\eddc"; }
+.pin-adit_profile:before { content: "\eb8f"; }
+.pin-adit_profile_with_rocks:before { content: "\eb90"; }
+.pin-american_football:before { content: "\eb91"; }
+.pin-analog_tv_with_rabbitears:before { content: "\eb92"; }
+.pin-analog_watch:before { content: "\eb93"; }
+.pin-anchor:before { content: "\eb94"; }
+.pin-antenna_array:before { content: "\eb95"; }
+.pin-anvil:before { content: "\eb96"; }
+.pin-app_terminal:before { content: "\eb97"; }
+.pin-arch:before { content: "\eb98"; }
+.pin-arrows_left_right_above_water:before { content: "\eb99"; }
+.pin-axial_reflecting_dish_with_monopod_antenna_and_beams:before { content: "\eb9a"; }
+.pin-axial_reflecting_dish_with_tripod_antenna:before { content: "\eb9b"; }
+.pin-bag:before { content: "\eb9c"; }
+.pin-bag_with_greek_cross:before { content: "\eb9d"; }
+.pin-balance_scales:before { content: "\eb9e"; }
+.pin-balloon:before { content: "\eb9f"; }
+.pin-banknote:before { content: "\eba0"; }
+.pin-banknote_in_hand:before { content: "\eba1"; }
+.pin-banknote_in_slot:before { content: "\eba2"; }
+.pin-barbell:before { content: "\eba3"; }
+.pin-basketball_in_basketball_net:before { content: "\eba4"; }
+.pin-beach_umbrella_in_ground:before { content: "\eba5"; }
+.pin-bear_spray_can_with_spray:before { content: "\eba6"; }
+.pin-bed:before { content: "\eba7"; }
+.pin-bench:before { content: "\eba8"; }
+.pin-bench_with_backrest:before { content: "\eba9"; }
+.pin-bifold_pamphlet:before { content: "\ebaa"; }
+.pin-binoculars:before { content: "\ebab"; }
+.pin-bleachers:before { content: "\ebac"; }
+.pin-book:before { content: "\ebad"; }
+.pin-boombox:before { content: "\ebae"; }
+.pin-bowling_pins:before { content: "\ebaf"; }
+.pin-bowling_pin_and_bowling_ball:before { content: "\ebb0"; }
+.pin-boxes_on_pallet:before { content: "\ebb1"; }
+.pin-bridge:before { content: "\ebb2"; }
+.pin-bridge_tied_arch:before { content: "\ebb3"; }
+.pin-briefcase:before { content: "\ebb4"; }
+.pin-briefcase_with_bolt:before { content: "\ebb5"; }
+.pin-briefcase_with_greek_cross:before { content: "\ebb6"; }
+.pin-briefcase_with_heavy_six_point_asterisk:before { content: "\ebb7"; }
+.pin-briefcase_with_info_i:before { content: "\ebb8"; }
+.pin-briefcase_with_shield:before { content: "\ebb9"; }
+.pin-bulletin_board:before { content: "\ebba"; }
+.pin-bunker_silo:before { content: "\ebbb"; }
+.pin-buoy_on_water:before { content: "\ebbc"; }
+.pin-bust_on_plinth:before { content: "\ebbd"; }
+.pin-cable:before { content: "\ebbe"; }
+.pin-cairn:before { content: "\ebbf"; }
+.pin-calculator:before { content: "\ebc0"; }
+.pin-camera:before { content: "\ebc1"; }
+.pin-campfire:before { content: "\ebc2"; }
+.pin-campfire_in_arch:before { content: "\ebc3"; }
+.pin-candle_with_flame:before { content: "\ebc4"; }
+.pin-cannon:before { content: "\ebc5"; }
+.pin-carpet:before { content: "\ebc6"; }
+.pin-car_battery:before { content: "\ebc7"; }
+.pin-cave:before { content: "\ebc8"; }
+.pin-charging_station:before { content: "\ebc9"; }
+.pin-charging_station_with_bolt:before { content: "\ebca"; }
+.pin-chest_of_drawers:before { content: "\ebcb"; }
+.pin-chimney_with_smoke:before { content: "\ebcc"; }
+.pin-cindercone_volcano_erupting:before { content: "\ebcd"; }
+.pin-clock_face:before { content: "\ebce"; }
+.pin-cloth:before { content: "\ebcf"; }
+.pin-clothes_hanger:before { content: "\ebd0"; }
+.pin-comedy_mask:before { content: "\ebd1"; }
+.pin-comedy_mask_and_tragedy_mask:before { content: "\ebd2"; }
+.pin-compass:before { content: "\ebd3"; }
+.pin-compass_rose:before { content: "\ebd4"; }
+.pin-conifer_tree_and_bench_on_ground:before { content: "\ebd5"; }
+.pin-conifer_tree_and_flower_and_mountain_snowcapped:before { content: "\ebd6"; }
+.pin-couch:before { content: "\ebd7"; }
+.pin-crane:before { content: "\ebd8"; }
+.pin-curtains:before { content: "\ebd9"; }
+.pin-dam:before { content: "\ebda"; }
+.pin-desk_lamp:before { content: "\ebdb"; }
+.pin-detergent_bottle:before { content: "\ebdc"; }
+.pin-dice:before { content: "\ebdd"; }
+.pin-disc_golf_basket:before { content: "\ebde"; }
+.pin-dress:before { content: "\ebdf"; }
+.pin-dumping_ash_in_bin:before { content: "\ebe0"; }
+.pin-dvd_case:before { content: "\ebe1"; }
+.pin-ear:before { content: "\ebe2"; }
+.pin-ear_atop_slash:before { content: "\ebe3"; }
+.pin-ear_with_hearing_aid:before { content: "\ebe4"; }
+.pin-envelope:before { content: "\ebe5"; }
+.pin-envelope_in_slot:before { content: "\ebe6"; }
+.pin-eye:before { content: "\ebe7"; }
+.pin-eyebrow:before { content: "\ebe8"; }
+.pin-eyebrow_and_eyelashes:before { content: "\ebe9"; }
+.pin-eyeglasses:before { content: "\ebea"; }
+.pin-eyelashes:before { content: "\ebeb"; }
+.pin-eye_outline:before { content: "\ebec"; }
+.pin-file_box:before { content: "\ebed"; }
+.pin-film:before { content: "\ebee"; }
+.pin-film_and_optical_disc:before { content: "\ebef"; }
+.pin-film_movie_projector:before { content: "\ebf0"; }
+.pin-fingernail_polished:before { content: "\ebf1"; }
+.pin-fire:before { content: "\ebf2"; }
+.pin-flag:before { content: "\ebf3"; }
+.pin-flag_checkered:before { content: "\ebf4"; }
+.pin-flag_over_railway_track:before { content: "\ebf5"; }
+.pin-flash_camera:before { content: "\ebf6"; }
+.pin-flat_coin:before { content: "\ebf7"; }
+.pin-floor_lamp:before { content: "\ebf8"; }
+.pin-fork_and_sausage:before { content: "\ebf9"; }
+.pin-fountain:before { content: "\ebfa"; }
+.pin-fountain_from_fountain_basin:before { content: "\ebfb"; }
+.pin-fountain_from_water:before { content: "\ebfc"; }
+.pin-game_controller_with_wire:before { content: "\ebfd"; }
+.pin-gasoline_pump:before { content: "\ebfe"; }
+.pin-gas_flame:before { content: "\ebff"; }
+.pin-giftwrapped_box:before { content: "\ec00"; }
+.pin-globe:before { content: "\ec01"; }
+.pin-goggles:before { content: "\ec02"; }
+.pin-golf_green:before { content: "\ec03"; }
+.pin-gown:before { content: "\ec04"; }
+.pin-grecian_vase:before { content: "\ec05"; }
+.pin-hammer_and_inverted_shoe:before { content: "\ec06"; }
+.pin-hand:before { content: "\ec07"; }
+.pin-handwheel:before { content: "\ec08"; }
+.pin-hand_holding_heart:before { content: "\ec09"; }
+.pin-hand_holding_service_tray:before { content: "\ec0a"; }
+.pin-hand_reaching_down:before { content: "\ec0b"; }
+.pin-hand_reaching_down_toward_rough_surface:before { content: "\ec0c"; }
+.pin-hand_with_eye:before { content: "\ec0d"; }
+.pin-hanging_sign_with_house:before { content: "\ec0e"; }
+.pin-headphones_with_info_i:before { content: "\ec0f"; }
+.pin-horn_cleat:before { content: "\ec10"; }
+.pin-horseshoe:before { content: "\ec11"; }
+.pin-horseshoe_with_stake:before { content: "\ec12"; }
+.pin-hydrant:before { content: "\ec13"; }
+.pin-icicles:before { content: "\ec14"; }
+.pin-jewel:before { content: "\ec15"; }
+.pin-keyhole:before { content: "\ec16"; }
+.pin-kitchen_sink:before { content: "\ec17"; }
+.pin-lantern:before { content: "\ec18"; }
+.pin-laptop:before { content: "\ec19"; }
+.pin-letter_box_us:before { content: "\ec1a"; }
+.pin-life_jacket:before { content: "\ec1b"; }
+.pin-lightbulb:before { content: "\ec1c"; }
+.pin-lips:before { content: "\ec1d"; }
+.pin-lipstick:before { content: "\ec1e"; }
+.pin-lips_and_lipstick:before { content: "\ec1f"; }
+.pin-locked_lock:before { content: "\ec20"; }
+.pin-locked_lock_with_keyhole:before { content: "\ec21"; }
+.pin-lockers_terminal:before { content: "\ec22"; }
+.pin-lounger:before { content: "\ec23"; }
+.pin-manhole_cover:before { content: "\ec24"; }
+.pin-manhole_cover_with_bolt:before { content: "\ec25"; }
+.pin-manhole_cover_with_cable:before { content: "\ec26"; }
+.pin-manhole_cover_with_droplet:before { content: "\ec27"; }
+.pin-manhole_cover_with_gas_flame:before { content: "\ec28"; }
+.pin-manhole_cover_with_hydrant:before { content: "\ec29"; }
+.pin-manhole_cover_with_sewage_pipe_cross_section:before { content: "\ec2a"; }
+.pin-maze:before { content: "\ec2b"; }
+.pin-medal_ribbon_with_anchor:before { content: "\ec2c"; }
+.pin-medal_ribbon_with_star:before { content: "\ec2d"; }
+.pin-megalith:before { content: "\ec2e"; }
+.pin-microscope:before { content: "\ec2f"; }
+.pin-milestone:before { content: "\ec30"; }
+.pin-mineshaft_cage:before { content: "\ec31"; }
+.pin-mineshaft_profile:before { content: "\ec32"; }
+.pin-mobile_phone_with_keypad_and_antenna:before { content: "\ec33"; }
+.pin-mobile_phone_with_keypad_and_antenna_and_bolt:before { content: "\ec34"; }
+.pin-mobile_phone_with_keypad_and_antenna_and_wifi:before { content: "\ec35"; }
+.pin-mobile_phone_with_touchscreen_and_antenna:before { content: "\ec36"; }
+.pin-mobile_phone_with_touchscreen_and_antenna_and_bolt:before { content: "\ec37"; }
+.pin-mobile_phone_with_touchscreen_and_antenna_and_wifi:before { content: "\ec38"; }
+.pin-molar_tooth:before { content: "\ec39"; }
+.pin-monopod_antenna_with_beams:before { content: "\ec3a"; }
+.pin-mortar_and_pestle_with_greek_cross:before { content: "\ec3b"; }
+.pin-mounted_scope:before { content: "\ec3c"; }
+.pin-mounted_slotted_dispenser_with_dog_wearing_collar:before { content: "\ec3d"; }
+.pin-music_notes_sixteenth:before { content: "\ec3e"; }
+.pin-music_note_with_optical_disc:before { content: "\ec3f"; }
+.pin-newspaper:before { content: "\ec40"; }
+.pin-newspaper_box_with_newspaper:before { content: "\ec41"; }
+.pin-obelisk:before { content: "\ec42"; }
+.pin-obelisk_on_plinth:before { content: "\ec43"; }
+.pin-open_book:before { content: "\ec44"; }
+.pin-palette:before { content: "\ec45"; }
+.pin-palette_with_music_note:before { content: "\ec46"; }
+.pin-paperclip:before { content: "\ec47"; }
+.pin-paper_and_pencil:before { content: "\ec48"; }
+.pin-parking_line:before { content: "\ec49"; }
+.pin-parking_p_with_parking_meter:before { content: "\ec4a"; }
+.pin-parking_structure:before { content: "\ec4b"; }
+.pin-pencil_and_apple:before { content: "\ec4c"; }
+.pin-pencil_bottom_left_to_square_outline:before { content: "\ec4d"; }
+.pin-phone_and_keyboard:before { content: "\ec4e"; }
+.pin-phone_bottom_right:before { content: "\ec4f"; }
+.pin-phone_right_with_exclamation_point:before { content: "\ec50"; }
+.pin-phone_top_right_with_greek_cross:before { content: "\ec51"; }
+.pin-picnic_table:before { content: "\ec52"; }
+.pin-pier_mounted_in_water:before { content: "\ec53"; }
+.pin-pier_on_water:before { content: "\ec54"; }
+.pin-pill:before { content: "\ec55"; }
+.pin-pill_bottle_with_greek_cross:before { content: "\ec56"; }
+.pin-pin:before { content: "\ec57"; }
+.pin-play_structure_with_slide:before { content: "\ec58"; }
+.pin-plug:before { content: "\ec59"; }
+.pin-plug_with_bolt:before { content: "\ec5a"; }
+.pin-poo_pile:before { content: "\ec5b"; }
+.pin-portable_radio:before { content: "\ec5c"; }
+.pin-postage_stamp:before { content: "\ec5d"; }
+.pin-post_box:before { content: "\ec5e"; }
+.pin-propane_tank:before { content: "\ec5f"; }
+.pin-propane_tank_with_gas_flame:before { content: "\ec60"; }
+.pin-propane_tank_with_recycling_symbol:before { content: "\ec61"; }
+.pin-pumpjack:before { content: "\ec62"; }
+.pin-purse:before { content: "\ec63"; }
+.pin-quay:before { content: "\ec64"; }
+.pin-rail_profile:before { content: "\ec65"; }
+.pin-ranger_hat:before { content: "\ec66"; }
+.pin-rigging:before { content: "\ec67"; }
+.pin-ring_with_jewel:before { content: "\ec68"; }
+.pin-rocket_firework:before { content: "\ec69"; }
+.pin-sandbox:before { content: "\ec6a"; }
+.pin-sandbox_with_sand_trowel:before { content: "\ec6b"; }
+.pin-scaffold:before { content: "\ec6c"; }
+.pin-sculpture:before { content: "\ec6d"; }
+.pin-sewage_pipe_cross_section:before { content: "\ec6e"; }
+.pin-shield:before { content: "\ec6f"; }
+.pin-shoe:before { content: "\ec70"; }
+.pin-shoe_under_shower_spray:before { content: "\ec71"; }
+.pin-shopping_bag:before { content: "\ec72"; }
+.pin-shopping_basket:before { content: "\ec73"; }
+.pin-shore:before { content: "\ec74"; }
+.pin-shuffleboard_court_with_pucks:before { content: "\ec75"; }
+.pin-sign_beside_bench_with_backrest:before { content: "\ec76"; }
+.pin-skull:before { content: "\ec77"; }
+.pin-skull_with_x_oblique:before { content: "\ec78"; }
+.pin-slide:before { content: "\ec79"; }
+.pin-slot_machine:before { content: "\ec7a"; }
+.pin-smoke_curl:before { content: "\ec7b"; }
+.pin-snorkel_and_diving_mask:before { content: "\ec7c"; }
+.pin-snowflake:before { content: "\ec7d"; }
+.pin-snowflake_and_icicles:before { content: "\ec7e"; }
+.pin-speaker:before { content: "\ec7f"; }
+.pin-spoon_and_chefs_knife_and_pot:before { content: "\ec80"; }
+.pin-square_academic_cap:before { content: "\ec81"; }
+.pin-stethoscope:before { content: "\ec82"; }
+.pin-storage_drum:before { content: "\ec83"; }
+.pin-storage_fermenter:before { content: "\ec84"; }
+.pin-street_lamp_arm:before { content: "\ec85"; }
+.pin-suitcase:before { content: "\ec86"; }
+.pin-suitcase_and_key:before { content: "\ec87"; }
+.pin-suitcase_xray:before { content: "\ec88"; }
+.pin-sun:before { content: "\ec89"; }
+.pin-survey_triangulation_disk:before { content: "\ec8a"; }
+.pin-swim_bra_and_swim_briefs:before { content: "\ec8b"; }
+.pin-table_soccer_players_with_ball:before { content: "\ec8c"; }
+.pin-telescope:before { content: "\ec8d"; }
+.pin-telescope_with_sparkles:before { content: "\ec8e"; }
+.pin-ticket:before { content: "\ec8f"; }
+.pin-ticket_in_slot:before { content: "\ec90"; }
+.pin-tiling:before { content: "\ec91"; }
+.pin-tire:before { content: "\ec92"; }
+.pin-tire_course:before { content: "\ec93"; }
+.pin-toilet_paper_roll:before { content: "\ec94"; }
+.pin-toolbox:before { content: "\ec95"; }
+.pin-tornado:before { content: "\ec96"; }
+.pin-trash_can:before { content: "\ec97"; }
+.pin-treasure_map:before { content: "\ec98"; }
+.pin-tree_and_bench_with_backrest:before { content: "\ec99"; }
+.pin-trifold_brochure:before { content: "\ec9a"; }
+.pin-trumpet:before { content: "\ec9b"; }
+.pin-tshirt:before { content: "\ec9c"; }
+.pin-tunnel:before { content: "\ec9d"; }
+.pin-tunnel_entrance:before { content: "\ec9e"; }
+.pin-vacuum_station:before { content: "\ec9f"; }
+.pin-vase:before { content: "\eca0"; }
+.pin-vending_machine:before { content: "\eca1"; }
+.pin-vneck_tshirt:before { content: "\eca2"; }
+.pin-volleyball:before { content: "\eca3"; }
+.pin-wallmounted_surveillance_camera:before { content: "\eca4"; }
+.pin-wall_hanging_with_mountains_and_sun:before { content: "\eca5"; }
+.pin-washing_machine:before { content: "\eca6"; }
+.pin-water:before { content: "\eca7"; }
+.pin-water_faucet_with_droplet:before { content: "\eca8"; }
+.pin-water_glass_under_faucet:before { content: "\eca9"; }
+.pin-water_glass_under_water_tap:before { content: "\ecaa"; }
+.pin-water_pipe_with_motor:before { content: "\ecab"; }
+.pin-water_tap:before { content: "\ecac"; }
+.pin-water_tap_with_motor:before { content: "\ecad"; }
+.pin-water_tap_with_pump_handle:before { content: "\ecae"; }
+.pin-webcam:before { content: "\ecaf"; }
+.pin-window:before { content: "\ecb0"; }
+.pin-windsock:before { content: "\ecb1"; }
+.pin-dharma_wheel:before { content: "\ecc8"; }
+.pin-khanda:before { content: "\ecc9"; }
+.pin-latin_cross:before { content: "\ecca"; }
+.pin-om:before { content: "\eccb"; }
+.pin-quaker_star:before { content: "\eccc"; }
+.pin-star_and_crescent:before { content: "\eccd"; }
+.pin-star_of_david:before { content: "\ecce"; }
+.pin-yin_yang:before { content: "\eccf"; }
+.pin-bell_in_tall_gable_roofed_building:before { content: "\eddd"; }
+.pin-bench_with_backrest_in_rectangular_shelter:before { content: "\edde"; }
+.pin-bicycle_in_garage:before { content: "\eddf"; }
+.pin-car_in_gable_roofed_building:before { content: "\ede0"; }
+.pin-crates_under_roof:before { content: "\ede1"; }
+.pin-dog_wearing_collar_in_shelter:before { content: "\ede2"; }
+.pin-horse_in_shelter:before { content: "\ede3"; }
+.pin-parking_p_under_roof:before { content: "\ede4"; }
+.pin-pedestrian_wearing_backpack_holding_hiking_pole_under_roof:before { content: "\ede5"; }
+.pin-picnic_table_in_shelter:before { content: "\ede6"; }
+.pin-roof_with_fireplace_and_chimney:before { content: "\ede7"; }
+.pin-shelter:before { content: "\ede8"; }
+.pin-sleeper_in_shelter:before { content: "\ede9"; }
+.pin-tornado_beside_shelter:before { content: "\edea"; }
+.pin-utility_pole:before { content: "\ea02"; }
+.pin-utility_pole_with_bolt:before { content: "\ea03"; }
+.pin-aerialway_pole:before { content: "\edeb"; }
+.pin-cooling_tower:before { content: "\edec"; }
+.pin-cooling_tower_with_radiation_symbol:before { content: "\eded"; }
+.pin-domed_tower:before { content: "\edee"; }
+.pin-guyed_mast:before { content: "\edef"; }
+.pin-guyed_mast_with_antenna_array:before { content: "\edf0"; }
+.pin-hunting_stand:before { content: "\edf1"; }
+.pin-lattice_power_tower:before { content: "\edf2"; }
+.pin-lattice_tower_with_ball_tip_antenna_on_ground_with_beams:before { content: "\edf3"; }
+.pin-lattice_tower_with_lookout_deck:before { content: "\edf4"; }
+.pin-lattice_tower_with_observation_deck_on_ground:before { content: "\edf5"; }
+.pin-lighthouse:before { content: "\edf6"; }
+.pin-pole_with_antenna_array:before { content: "\edf7"; }
+.pin-pole_with_floodlights:before { content: "\edf8"; }
+.pin-silo:before { content: "\edf9"; }
+.pin-tower_with_observation_deck:before { content: "\edfa"; }
+.pin-water_tower:before { content: "\edfb"; }
+.pin-windmill:before { content: "\edfc"; }
+.pin-windpump:before { content: "\edfd"; }
+.pin-wind_turbine:before { content: "\edfe"; }
+.pin-billboard:before { content: "\ecd0"; }
+.pin-gravestone:before { content: "\ecd1"; }
+.pin-guidepost:before { content: "\ecd2"; }
+.pin-inclined_information_panel:before { content: "\ecd3"; }
+.pin-inscribed_memorial_stone:before { content: "\ecd4"; }
+.pin-inscribed_stone:before { content: "\ecd5"; }
+.pin-plaque:before { content: "\ecd6"; }
+.pin-poster_box:before { content: "\ecd7"; }
+.pin-roofed_information_board:before { content: "\ecd8"; }
+.pin-sign:before { content: "\ecd9"; }
+.pin-signboard:before { content: "\ecda"; }
+.pin-utility_device:before { content: "\ea04"; }
+.pin-utility_device_with_bolt:before { content: "\ea05"; }
+.pin-utility_device_with_cable:before { content: "\ea06"; }
+.pin-utility_device_with_droplet:before { content: "\ea07"; }
+.pin-utility_device_with_gas_flame:before { content: "\ea08"; }
+.pin-utility_device_with_sewage_pipe_cross_section:before { content: "\ea09"; }
+.pin-utility_meter:before { content: "\ea0a"; }
+.pin-utility_meter_with_bolt:before { content: "\ea0b"; }
+.pin-utility_meter_with_cable:before { content: "\ea0c"; }
+.pin-utility_meter_with_droplet:before { content: "\ea0d"; }
+.pin-utility_meter_with_gas_flame:before { content: "\ea0e"; }
+.pin-utility_shutoff:before { content: "\ea0f"; }
+.pin-utility_shutoff_with_bolt:before { content: "\ea10"; }
+.pin-utility_shutoff_with_cable:before { content: "\ea11"; }
+.pin-utility_valve:before { content: "\ea12"; }
+.pin-utility_valve_with_droplet:before { content: "\ea13"; }
+.pin-utility_valve_with_gas_flame:before { content: "\ea14"; }
+.pin-crosswalk_markings_dashes:before { content: "\edff"; }
+.pin-crosswalk_markings_dots:before { content: "\ee00"; }
+.pin-crosswalk_markings_ladder:before { content: "\ee01"; }
+.pin-crosswalk_markings_ladder_paired:before { content: "\ee02"; }
+.pin-crosswalk_markings_ladder_skewed:before { content: "\ee03"; }
+.pin-crosswalk_markings_lines:before { content: "\ee04"; }
+.pin-crosswalk_markings_lines_paired:before { content: "\ee05"; }
+.pin-crosswalk_markings_surface:before { content: "\ee06"; }
+.pin-crosswalk_markings_zebra:before { content: "\ee07"; }
+.pin-crosswalk_markings_zebra_double:before { content: "\ee08"; }
+.pin-crosswalk_markings_zebra_paired:before { content: "\ee09"; }
+.pin-parking_stall_markings:before { content: "\ee0a"; }
+.pin-parking_stall_markings_with_person_in_wheelchair:before { content: "\ee0b"; }
+.pin-racetrack_eight_with_dashes:before { content: "\ee0c"; }
+.pin-racetrack_oval:before { content: "\ee0d"; }
+.pin-racetrack_oval_with_dashes:before { content: "\ee0e"; }
+.pin-railway_cable_track:before { content: "\ee0f"; }
+.pin-railway_track:before { content: "\ee10"; }
+.pin-railway_track_askew:before { content: "\ee11"; }
+.pin-railway_track_crossing_dashed_line:before { content: "\ee12"; }
+.pin-railway_track_crossing_railway_track:before { content: "\ee13"; }
+.pin-railway_track_crossing_solid_line:before { content: "\ee14"; }
+.pin-railway_track_crossing_striped_line:before { content: "\ee15"; }
+.pin-railway_track_mini:before { content: "\ee16"; }
+.pin-railway_track_narrow_gauge:before { content: "\ee17"; }
+.pin-railway_track_partial:before { content: "\ee18"; }
+.pin-striped_zone:before { content: "\ee19"; }
+.pin-tram_track_crossing_dashed_line:before { content: "\ee1a"; }
+.pin-tram_track_crossing_solid_line:before { content: "\ee1b"; }
+.pin-tram_track_crossing_striped_line:before { content: "\ee1c"; }
