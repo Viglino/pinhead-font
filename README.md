@@ -36,7 +36,7 @@ Then use an inline element with a class prefixed with `pin-` to add a new icon.
 <img src="https://github.com/Viglino/pinhead-font/blob/main/svg/misc/uEC73-shopping_basket.svg" height="30" />
 ```html
 <!-- prefix: pin - icon name: map_pin_with_dot -->
-<i class="pin-fg-map_pin_with_dot"></i>
+<i class="pin-map_pin_with_dot"></i>
 <!-- using a <span> is more semantically correct but a little bit verbose. -->
 <span class="pin-shopping_basket"></span>
 ```
