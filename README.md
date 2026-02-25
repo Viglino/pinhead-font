@@ -1,14 +1,14 @@
 # <img src="https://github.com/Viglino/pinhead-font/blob/main/svg/misc/uEC57-pin.svg" height="40" /> Pinhead-Font
-*Icon font set for use with GIS and spatial analysis tools*
+*Quality public domain icons for your map pins*
 
 [![](https://img.shields.io/npm/v/pinhead-font.svg)](https://www.npmjs.com/package/pinhead-font)
 ![](https://img.shields.io/npm/dt/pinhead-font.svg)
 ![](https://img.shields.io/npm/dw/pinhead-font)
 ![](https://img.shields.io/npm/l/pinhead-font.svg)
 
-I've collected in this repo icons and graphics I've been using in my projects.
-Pinhead-Font icons and font theme is designed mainly for GIS applications and web mapping tools. 
-They can be easily included in a project using the font or svg images.
+This repo use the icons from the [Pinhead project](https://github.com/waysidemapping/pinhead).
+Pinhead has 1,000+ icons and counting, including standardized versions of the most popular public domain 
+cartographic icon sets: Maki, Temaki, OSM Carto, and NPMap.
 
 [See demo page and examples <img src="https://github.com/Viglino/pinhead-font/blob/main/svg/misc/uEC57-pin.svg" height="25" />](https://viglino.github.io/pinhead-font/)
 
